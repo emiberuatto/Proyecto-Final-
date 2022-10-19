@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
     
 }
 
@@ -38,6 +39,7 @@
 
 .element1:hover{
     text-shadow: 2px 3px 3px rgb(0, 102, 255);
+    color: white;
 }
 
 .element1__olio{
@@ -291,46 +293,22 @@
 
 .contenedor1__habilidades{
     width: 100vw;
-    height: 280px;
+    height: 100vh;
     margin-top: 90px;
     display: flex;
     flex-direction: column;
 }
 
-.contenedor__img{
-    width: 100vw;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.d-block{
+    width: 300px;
+    height: 300px;
+    margin: auto;
 }
 
-.img__habilidades{
-    width: 160px;
-    height: 160px;
+.carousel-caption{
+    top: 300px;
 }
 
-.contenedor__h2{
-    width: 100vw;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.habilidades__h2{
-    font-size: 40px;
-    color: white;
-}
-
-.spanHabilidades{
-    color:rgb(26, 243, 26)
-}
-
-.contenedor2__habilidades{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.carousel-inner{
+    height: 70vh;
 }
