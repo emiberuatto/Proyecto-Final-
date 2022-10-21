@@ -58,18 +58,20 @@
     flex-wrap: wrap;
 }
 
-.element1__a{
+.element1__a, #proyecto__header{
     color: white;
     margin-right: 50px;
     font-size: 30px;
     text-decoration: none;
     text-shadow: 3px 4px 5px rgb(26, 243, 26);
     font-family: fantasy, sans-serif;
+    transition-duration: 2s;
 }
 
-.element1__a:hover{
+.element1__a:hover, #proyecto__header:hover{
     text-shadow: 2px 4px 5px rgb(0, 102, 255);
     color: rgb(255, 255, 255);
+    transform:  rotate(360deg);
 }
 
 .footer{
@@ -89,6 +91,8 @@
     margin: 0 20px; 
     animation: saltar 1s infinite alternate-reverse; 
 }
+
+
  
 @keyframes saltar{
     0%{transform: translateY(15px);}
@@ -141,6 +145,7 @@
 
 .fondoEmiliano__contenedor2__img{
     width: 230px;
+    height: fit-content;
     margin-bottom: 15px;
     border-radius: 35px;
 }
@@ -311,4 +316,57 @@
 
 .carousel-inner{
     height: 70vh;
+}
+
+/*aqui empieza css de proyectos*/
+*{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+#main__proyecto{
+    background-color: black;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container{
+    height: 5rem;
+}
+
+.navbar-text{
+    margin-right: 70px;
+}
+
+.card-img-top{
+    width: 15rem;
+    margin: 6px auto 0;
+}
+
+.col{
+    margin: 1.5rem auto;
+
+    
+}
+
+.card{
+    margin: 30px auto 10px;
+    width: 20rem;
+    height: 24rem;
+    border: 2px solid rgb(26, 243, 26);
+    background-color: rgb(26, 24, 24);
+}
+
+#container__footer{
+    position:relative ;
+}
+
+.card-title, .card-text{
+    color: white;
 }
