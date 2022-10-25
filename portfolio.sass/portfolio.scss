@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+}
+
+.imgFondo{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contenedor{
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .element1{
+        font-size: 60px;
+        color: white;
+        margin-left: 60px;
+        text-shadow: 2px 3px 3px rgb(26, 243, 26);
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        &:hover{
+            text-shadow: 2px 3px 3px rgb(0, 102, 255);
+            color: white;
+        }
+    }
+    
+    .element1__olio{
+        color: rgb(26, 243, 26);
+    }
+
+    
+}
+
+
+
+
+
+
+.element2{
+    
+    width: 770px;
+    height: 50px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.element1__a, #proyecto__header{
+    color: white;
+    margin-right: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 3px 4px 5px rgb(26, 243, 26);
+    font-family: fantasy, sans-serif;
+    transition-duration: 2s;
+}
+
+.element1__a:hover, #proyecto__header:hover{
+    text-shadow: 2px 4px 5px rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+    transform:  rotate(360deg);
+}
+
+.footer{
+    background-color:rgb(27, 27, 27);
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer__icon{
+        width: 40px;
+        height: 40px;
+        margin: 0 20px; 
+        animation: saltar 1s infinite alternate-reverse; 
+    }
+    
+    
+     
+    @keyframes saltar{
+        0%{transform: translateY(15px);}
+    }
+}
+
+
+
+
+
+/* Acerca de Emiliano*/
+
+.fondoEmiliano{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+
+.fondoEmiliano__h1{
+    width: 600px;
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 8px;
+}
+
+.fondoEmiliano__contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    
+.fondoEmiliano__contenedor2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .fondoEmiliano__contenedor2__img{
+        width: 230px;
+        height: fit-content;
+        margin-bottom: 15px;
+        border-radius: 35px;
+    }
+
+}
+
+
+
+.fondoEmiliano__contenedor3{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.spanEmiliano{
+    color: rgb(26, 243, 26);
+}
+
+.fondoEmiliano__contenedor3__h2{
+    color: white;
+    font-size: 50px;
+    width: 700px;
+    margin: 140px auto 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+.fondoEmiliano__contenedor3__h3{
+    color: white;
+    font-size: 30px;
+    width: 700px;
+    margin: 5px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 40px;
+}
+
+/* css de contacto*/
+
+.contenedor__contacto{
+    background-color: black;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fondoContacto{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 87vh;
+
+}
+
+
+.fondoContacto__h1{
+    width: 700px;
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 8px;
+}
+
+.contacto__conteiner1{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 600px;
+    
+
+}
+
+.contacto__container1__inputs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 17px;
+}
+
+.contacto__container1__inputs textarea{
+    border-radius: 10px;
+    border-style: inset;
+    width: 500px;
+    height: 120px;
+
+}
+
+
+.contactoLabel{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px;
+    
+    
+    
+}
+
+.contacto__container1__inputs input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.contacto__container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    margin-top: 130px;
+
+}
+
+
+
+.contacto__container2__h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px;
+    font-size: 40px;
+    
+}
+
+.spanJuntos{
+    color:rgb(26, 243, 26)
+}
+
+.contacto__btn{
+    background-color: rgb(26, 243, 26);
+    width: 3px;
+}
+
+
+/*css de Habilidades*/
+
+.fondoEmiliano__habilidades{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor1__habilidades{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-block{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.carousel-caption{
+    top: 300px;
+}
+
+.carousel-inner{
+    height: 70vh;
+}
+
+/*aqui empieza css de proyectos*/
+*{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+#main__proyecto{
+    background-color: black;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container{
+    height: 5rem;
+}
+
+.navbar-text{
+    margin-right: 70px;
+}
+
+.card-img-top{
+    width: 15rem;
+    margin: 6px auto 0;
+}
+
+.col{
+    margin: 1.5rem auto;
+    .card{
+    margin: 30px auto 10px;
+    width: 20rem;
+    height: 24rem;
+    border: 2px solid rgb(26, 243, 26);
+    background-color: rgb(26, 24, 24);
+}
+    
+}
+
+
+
+#container__footer{
+    position:relative ;
+}
+
+.card-title, .card-text{
+    color: white;
+}
