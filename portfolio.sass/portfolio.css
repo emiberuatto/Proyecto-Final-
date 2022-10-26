@@ -61,7 +61,7 @@
 
 .element1__a:hover, #proyecto__header:hover {
   text-shadow: 2px 4px 5px rgb(0, 102, 255);
-  color: rgb(255, 255, 255);
+  color: white;
   transform: rotate(360deg);
 }
 
@@ -180,14 +180,14 @@
 }
 
 .fondoContacto {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: 100vw;
   height: 87vh;
 }
 
 .fondoContacto__h1 {
   width: 700px;
-  color: white;
+  color: black;
   font-size: 50px;
   margin-top: 30px;
   flex-wrap: wrap;
@@ -222,7 +222,7 @@
 }
 
 .contactoLabel {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 30px;
   padding: 10px;
 }
@@ -327,7 +327,7 @@
   width: 20rem;
   height: 24rem;
   border: 2px solid rgb(26, 243, 26);
-  background-color: rgb(26, 24, 24);
+  background-color: black;
 }
 
 #container__footer {
@@ -335,5 +335,5 @@
 }
 
 .card-title, .card-text {
-  color: white;
+  color: black;
 }/*# sourceMappingURL=portfolio.css.map */
