@@ -34,11 +34,10 @@
   text-shadow: 2px 3px 3px rgb(0, 102, 255);
   color: white;
 }
-.contenedor .element1__olio {
+.contenedor .element1 .element1__olio {
   color: rgb(26, 243, 26);
 }
-
-.element2 {
+.contenedor .element2 {
   width: 770px;
   height: 50px;
   margin-right: 40px;
@@ -48,8 +47,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.element1__a, #proyecto__header {
+.contenedor .element2 .element1__a {
   color: white;
   margin-right: 50px;
   font-size: 30px;
@@ -58,8 +56,22 @@
   font-family: fantasy, sans-serif;
   transition-duration: 2s;
 }
+.contenedor .element2 .element1__a:hover {
+  text-shadow: 2px 4px 5px rgb(0, 102, 255);
+  color: white;
+  transform: rotate(360deg);
+}
 
-.element1__a:hover, #proyecto__header:hover {
+#proyecto__header {
+  color: white;
+  margin-right: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 3px 4px 5px rgb(26, 243, 26);
+  font-family: fantasy, sans-serif;
+  transition-duration: 2s;
+}
+#proyecto__header:hover {
   text-shadow: 2px 4px 5px rgb(0, 102, 255);
   color: white;
   transform: rotate(360deg);
@@ -121,15 +133,14 @@
   align-items: center;
   justify-content: center;
 }
-
-.fondoEmiliano__contenedor2 {
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor2 {
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.fondoEmiliano__contenedor2 .fondoEmiliano__contenedor2__img {
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor2 .fondoEmiliano__contenedor2__img {
   width: 230px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -137,20 +148,14 @@
   margin-bottom: 15px;
   border-radius: 35px;
 }
-
-.fondoEmiliano__contenedor3 {
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor3 {
   width: 80%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
-
-.spanEmiliano {
-  color: rgb(26, 243, 26);
-}
-
-.fondoEmiliano__contenedor3__h2 {
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor3 .fondoEmiliano__contenedor3__h2 {
   color: white;
   font-size: 50px;
   width: 700px;
@@ -158,8 +163,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-wrap: wrap;
 }
-
-.fondoEmiliano__contenedor3__h3 {
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor3 .fondoEmiliano__contenedor3__h2 .spanEmiliano {
+  color: rgb(26, 243, 26);
+}
+.fondoEmiliano__contenedor .fondoEmiliano__contenedor3 .fondoEmiliano__contenedor3__h3 {
   color: white;
   font-size: 30px;
   width: 700px;

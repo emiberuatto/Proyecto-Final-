@@ -36,33 +36,42 @@
             text-shadow: 2px 3px 3px $color-blue-shadow;
             color: $color-white;
         }
+        .element1__olio{
+            color: $color-green;
+        }
+        
     }
     
-    .element1__olio{
-        color: $color-green;
+    .element2{
+    
+        width: 770px;
+        height: 50px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .element1__a {
+            color: $color-white;
+            margin-right: 50px;
+            font-size: 30px;
+            text-decoration: none;
+            text-shadow: 3px 4px 5px $color-green;
+            font-family: fantasy, sans-serif;
+            transition-duration: 2s;
+            &:hover{
+                text-shadow: 2px 4px 5px $color-blue-shadow;
+                color: $color-white;
+                transform:  rotate(360deg);
+            }
+        }
     }
 
     
 }
 
-
-
-
-
-
-.element2{
-    
-    width: 770px;
-    height: 50px;
-    margin-right: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.element1__a, #proyecto__header{
+#proyecto__header{
     color: $color-white;
     margin-right: 50px;
     font-size: 30px;
@@ -70,13 +79,14 @@
     text-shadow: 3px 4px 5px $color-green;
     font-family: fantasy, sans-serif;
     transition-duration: 2s;
+    &:hover{
+        text-shadow: 2px 4px 5px $color-blue-shadow;
+        color: $color-white;
+        transform:  rotate(360deg);
+    }
 }
 
-.element1__a:hover, #proyecto__header:hover{
-    text-shadow: 2px 4px 5px $color-blue-shadow;
-    color: $color-white;
-    transform:  rotate(360deg);
-}
+
 
 .footer{
     background-color:$color-grey;
@@ -92,10 +102,7 @@
         height: 40px;
         margin: 0 20px; 
         animation: saltar 1s infinite alternate-reverse; 
-    }
-    
-    
-     
+    }    
     @keyframes saltar{
         0%{transform: translateY(15px);}
     }
@@ -137,54 +144,54 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+    .fondoEmiliano__contenedor2{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .fondoEmiliano__contenedor2__img{
+            width: 230px;
+            height: fit-content;
+            margin-bottom: 15px;
+            border-radius: 35px;
+        }
     
-.fondoEmiliano__contenedor2{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    .fondoEmiliano__contenedor2__img{
-        width: 230px;
-        height: fit-content;
-        margin-bottom: 15px;
-        border-radius: 35px;
+    }
+    .fondoEmiliano__contenedor3{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        .fondoEmiliano__contenedor3__h2{
+            color: $color-white;
+            font-size: 50px;
+            width: 700px;
+            margin: 140px auto 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            flex-wrap: wrap;
+            .spanEmiliano{
+                color: $color-green;
+            }
+        }
+        
+        .fondoEmiliano__contenedor3__h3{
+            color: $color-white;
+            font-size: 30px;
+            width: 700px;
+            margin: 5px auto;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 40px;
+        }
+        
     }
 
 }
+    
 
 
 
-.fondoEmiliano__contenedor3{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.spanEmiliano{
-    color: $color-green;
-}
-
-.fondoEmiliano__contenedor3__h2{
-    color: $color-white;
-    font-size: 50px;
-    width: 700px;
-    margin: 140px auto 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap;
-}
-
-.fondoEmiliano__contenedor3__h3{
-    color: $color-white;
-    font-size: 30px;
-    width: 700px;
-    margin: 5px auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 40px;
-}
 
 /* css de contacto*/
 
