@@ -37,7 +37,8 @@
 .contenedor .element1 .element1__olio {
   color: rgb(26, 243, 26);
 }
-.contenedor .element2 {
+
+.contenedor #element2 {
   width: 770px;
   height: 50px;
   margin-right: 40px;
@@ -47,7 +48,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.contenedor .element2 .element1__a {
+.contenedor #element2 .element1__a {
   color: white;
   margin-right: 50px;
   font-size: 30px;
@@ -56,7 +57,7 @@
   font-family: fantasy, sans-serif;
   transition-duration: 2s;
 }
-.contenedor .element2 .element1__a:hover {
+.contenedor #element2 .element1__a:hover {
   text-shadow: 2px 4px 5px rgb(0, 102, 255);
   color: white;
   transform: rotate(360deg);
@@ -344,3 +345,33 @@
 .card-title, .card-text {
   color: black;
 }/*# sourceMappingURL=portfolio.css.map */
+
+@media (max-width: 740px) {
+  .element1{
+      font-size: 40px;
+      margin-left: 0;
+  }
+  
+   
+}
+
+@media (max-width:740px){
+  .col{
+      margin: auto;
+  }
+  .col:nth-child(1){
+      margin-top: 14em;
+  }   
+  .card{
+      width: 15em;
+      margin: o;
+  }
+
+  
+  .card-title{
+      font-size: 1.3em;
+  }
+  .card-text{
+      font-size: 0.9em;
+  }
+}

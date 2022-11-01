@@ -39,10 +39,16 @@
         .element1__olio{
             color: $color-green;
         }
-        
+
     }
     
-    .element2{
+@media (max-width: 740px) {
+    .element1{
+        font-size: 30px;
+    }
+}
+
+    #element2{
     
         width: 770px;
         height: 50px;
@@ -67,9 +73,11 @@
             }
         }
     }
-
+    
     
 }
+
+
 
 #proyecto__header{
     color: $color-white;
