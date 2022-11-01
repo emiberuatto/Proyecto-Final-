@@ -381,18 +381,13 @@
     color: white;
 }
 
-@media (max-width: 740px) {
-    .element1{
-        font-size: 40px;
-        margin-left: 0;
-    }
-    
-     
-}
-
 @media (max-width:740px){
     *{
         box-sizing: content-box;
+    }
+    .element1{
+        font-size: 40px;
+        margin-left: 0;
     }
     .col{
         margin: auto;
