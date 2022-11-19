@@ -5,7 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    overflow-x: hidden;
     
+    
+}
+.container-header, #navbarText{
+    width: 100vw;
 }
 
 .imgFondo{
@@ -14,17 +19,18 @@
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 
-.contenedor{
-    position: fixed;
+.navbar-text{
     width: 100vw;
     height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
     .element1{
         font-size: 60px;
         color: $color-white;
@@ -42,12 +48,7 @@
         }
 
     }
-    
-@media (max-width: 740px) {
-    .element1{
-        font-size: 30px;
-    }
-}
+
 
     #element2{
     
@@ -101,7 +102,7 @@
     background-color:$color-grey;
     width: 100vw;
     height: 70px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -110,7 +111,7 @@
         width: map-get($redes, width );
         height: map-get($redes ,heigt );
         margin: map-get($redes , margin ); 
-        animation: map-get($redes , animation )
+        animation: map-get($redes , animation );
     }    
     @keyframes saltar{
         0%{transform: translateY(15px);}
@@ -390,16 +391,30 @@
 }
 
 .card-title, .card-text{
-    color: $color-black;
+    color: $color-white;
 }
 
-@media (max-width:740px){
-    *{
-        box-sizing: content-box;
-    }
-    .element1{
-        font-size: 40px;
-        margin-left: 0;
+@media  (max-width:740px){
+ 
+    .navbar-text{
+        
+        .element1{
+            font-size: 40px;
+            color: $color-white;
+            margin-left: 0px;
+            text-shadow: 2px 3px 3px $color-green;
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+            &:hover{
+                text-shadow: 2px 3px 3px $color-blue-shadow;
+                color: $color-white;
+            }
+            .element1__olio{
+                color: $color-green;
+            }
+
+        }
     }
     .col{
         margin: auto;
@@ -567,15 +582,13 @@
 
 
 }
-@media  (min-width: 740px) and (max-width: 1024px) {
-    * {
-      -webkit-box-sizing: content-box;
-              box-sizing: content-box;
-    }
-    .element1 {
-      font-size: 40px;
-      margin-left: 0;
-    }
+@media  (min-width: 740px) and (max-width: 1200px) {
+    .navbar-text{
+        .element1 {
+        font-size: 50px;
+        margin-left: 0;
+        }
+}
     .col {
       margin: auto;
     }
