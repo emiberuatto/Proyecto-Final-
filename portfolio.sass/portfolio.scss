@@ -598,9 +598,18 @@ overflow-x: hidden;
     .navbar-text{
         .element1 {
         font-size: 50px;
-        margin-left: 0;
+        margin-left: 10%;
         }
+    
+    }
+
+.nav-item{
+    margin-left: 15px;
+    width: 160px;
+    padding-right: 2px;
 }
+    
+
     .col {
       margin: auto;
     }
