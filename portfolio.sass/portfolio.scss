@@ -229,11 +229,15 @@ overflow-x: hidden;
     background-color: $color-black;
     width: 100vw;
     height: 87vh;
-
-}
-
-
-.fondoContacto__h1{
+    .contacto__conteiner1{
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+        width: 600px;
+        
+    
+    }
+    .fondoContacto__h1{
     width: 700px;
     color: $color-black;
     font-size: 50px;
@@ -243,15 +247,12 @@ overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-spacing: 8px;
 }
-
-.contacto__conteiner1{
-    display: flex;
-    flex-direction: row;
-    height: 70%;
-    width: 600px;
-    
-
 }
+
+
+
+
+
 
 .contacto__container1__inputs{
     width: 100%;
@@ -429,15 +430,24 @@ overflow-x: hidden;
         }
     }
     .col{
-        margin: auto;
+        margin-left: auto;
+        width: 15rem;
+        &
+        .card{
+            width: 15rem;
+            margin:0 auto;
+    
+        
+         
+        
     }
-    .col:nth-child(1){
-        margin-top: 1em;
-    }   
-    .card{
-        width: 15em;
-        margin: o;
-    }
+}
+.col:nth-child(1){
+    margin-top: 4rem;
+} 
+.col:nth-child(2){
+    margin-top: 4rem;
+} 
 
     .container{
         z-index: 3;
@@ -541,7 +551,7 @@ overflow-x: hidden;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 3%;
     margin-top: 150px;
 
 
@@ -550,7 +560,7 @@ overflow-x: hidden;
 .contacto__container1__inputs textarea{
     border-radius: 10px;
     border-style: inset;
-    width: 300px;
+    width: 15rem;
     height: 120px;
     margin-bottom: 5px;
     
@@ -558,12 +568,12 @@ overflow-x: hidden;
 
 
 .contactoLabel{
-    font-size: 30px;
+    font-size: 1.5rem;
     padding: 2px;    
 }
 
 .contacto__container1__inputs input{
-    width: 300px;
+    width: 15rem;
     height: 30px;
     border-radius: 10px;
 }
@@ -582,8 +592,8 @@ overflow-x: hidden;
 }
 
 .contacto__container2__h2{
-    width: 290px;
-    font-size: 30px;
+    width: 15rem;
+    font-size: 1.5rem;
 }
 
 .contacto__btn{
@@ -612,14 +622,18 @@ overflow-x: hidden;
 
     .col {
       margin: auto;
+      .card {
+        width: 20em;
+        margin: o;
+      }
     }
     .col:nth-child(1) {
-      margin-top: 1em;
-    }
-    .card {
-      width: 15em;
-      margin: o;
-    }
+        margin-top: 1em;
+      }
+    .col:nth-child(2) {
+        margin-top: 1em;
+      }
+    
     .container {
       z-index: 3;
     }
@@ -737,13 +751,13 @@ overflow-x: hidden;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-left: 50%;
+      margin-left: 30%;
       margin-top: 150px;
     }
     .contacto__container1__inputs textarea {
       border-radius: 10px;
       border-style: inset;
-      width: 400px;
+      width: 25rem;
       height: 120px;
       margin-bottom: 5px;
     }
@@ -752,7 +766,7 @@ overflow-x: hidden;
       padding: 2px;
     }
     .contacto__container1__inputs input {
-      width: 400px;
+      width: 25rem;
       height: 30px;
       border-radius: 10px;
     }
@@ -775,7 +789,7 @@ overflow-x: hidden;
     }
     .contacto__container2__h2 {
       width: 590px;
-      font-size: 30px;
+      font-size: 2.3rem;
     }
     .contacto__btn {
       background-color: #1af31a;

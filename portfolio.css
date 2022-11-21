@@ -200,8 +200,13 @@
   width: 100vw;
   height: 87vh;
 }
-
-.fondoContacto__h1 {
+.fondoContacto .contacto__conteiner1 {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 600px;
+}
+.fondoContacto .fondoContacto__h1 {
   width: 700px;
   color: black;
   font-size: 50px;
@@ -210,13 +215,6 @@
   display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   word-spacing: 8px;
-}
-
-.contacto__conteiner1 {
-  display: flex;
-  flex-direction: row;
-  height: 70%;
-  width: 600px;
 }
 
 .contacto__container1__inputs {
@@ -372,14 +370,18 @@
     color: rgb(26, 243, 26);
   }
   .col {
-    margin: auto;
+    margin-left: auto;
+    width: 15rem;
+  }
+  .col .card {
+    width: 15rem;
+    margin: 0 auto;
   }
   .col:nth-child(1) {
-    margin-top: 1em;
+    margin-top: 4rem;
   }
-  .card {
-    width: 15em;
-    margin: o;
+  .col:nth-child(2) {
+    margin-top: 4rem;
   }
   .container {
     z-index: 3;
@@ -461,22 +463,22 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 3%;
     margin-top: 150px;
   }
   .contacto__container1__inputs textarea {
     border-radius: 10px;
     border-style: inset;
-    width: 300px;
+    width: 15rem;
     height: 120px;
     margin-bottom: 5px;
   }
   .contactoLabel {
-    font-size: 30px;
+    font-size: 1.5rem;
     padding: 2px;
   }
   .contacto__container1__inputs input {
-    width: 300px;
+    width: 15rem;
     height: 30px;
     border-radius: 10px;
   }
@@ -492,8 +494,8 @@
     margin-top: 130px;
   }
   .contacto__container2__h2 {
-    width: 290px;
-    font-size: 30px;
+    width: 15rem;
+    font-size: 1.5rem;
   }
   .contacto__btn {
     background-color: rgb(26, 243, 26);
@@ -514,12 +516,15 @@
   .col {
     margin: auto;
   }
+  .col .card {
+    width: 20em;
+    margin: o;
+  }
   .col:nth-child(1) {
     margin-top: 1em;
   }
-  .card {
-    width: 15em;
-    margin: o;
+  .col:nth-child(2) {
+    margin-top: 1em;
   }
   .container {
     z-index: 3;
@@ -637,13 +642,13 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: 150px;
   }
   .contacto__container1__inputs textarea {
     border-radius: 10px;
     border-style: inset;
-    width: 400px;
+    width: 25rem;
     height: 120px;
     margin-bottom: 5px;
   }
@@ -652,7 +657,7 @@
     padding: 2px;
   }
   .contacto__container1__inputs input {
-    width: 400px;
+    width: 25rem;
     height: 30px;
     border-radius: 10px;
   }
@@ -675,7 +680,7 @@
   }
   .contacto__container2__h2 {
     width: 590px;
-    font-size: 30px;
+    font-size: 2.3rem;
   }
   .contacto__btn {
     background-color: #1af31a;
